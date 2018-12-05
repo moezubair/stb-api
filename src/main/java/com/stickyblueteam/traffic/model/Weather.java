@@ -9,10 +9,10 @@ public class Weather
   
 private String longitude;
 private String lat;
-private float temp;
+private Double temp;
 private String hour;
   
-  public Weather(String longitude, String lat, float temp, String hour)
+  public Weather(String longitude, String lat, Double temp, String hour)
   {
     this.longitude = longitude;
     this.lat = lat;
@@ -27,10 +27,10 @@ private String hour;
   
   public String getLatitude()
   {
-    return this.latitude;
+    return this.lat;
   }
   
-  public float getTemp()
+  public Double getTemp()
   {
     return this.temp;
   }
@@ -52,10 +52,10 @@ private String hour;
   
  public void setLatitude(String newLatitude)
   {
-    this.latitude = newLatitude;
+    this.lat = newLatitude;
   }
   
-  public void setTemp(float newTemp)
+  public void setTemp(Double newTemp)
   {
     this.temp = newTemp;
   }
